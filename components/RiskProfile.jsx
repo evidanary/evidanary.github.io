@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
-import { Button } from 'react-bootstrap';
 import Gauge from 'react-svg-gauge';
 
 const RISK_CATEGORIES = [
@@ -360,7 +359,7 @@ export default class RiskProfile extends React.Component {
   }
 
   get followupActions() {
-    return (<Button bsStyle="primary" bsSize="large" onClick={() => window.print()}>Print/Download</Button>);
+    return (<button onClick={() => window.print()}>Print/Download</button>);
   }
 
   //Calculates scores for risk categories object
