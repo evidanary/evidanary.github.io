@@ -10,21 +10,15 @@ function Home() {
   return (
     <div>
       <p>
-        This is an example single page app built
-        with <a href={reactLink}>React</a> and {' '}
-        <a href={reactRouterLink}>React&nbsp;Router</a> using {' '}
-        <code>browserHistory</code>. Navigate with the links below and
-        refresh the page or copy/paste the url to test out the redirect
-        functionality deployed to overcome {' '}
-        <a href={ghPagesLink}>GitHub&nbsp;Pages</a> incompatibility
-        with single page apps (like this one).
+        I'm the creator of <a href="https://www.greppage.com" target="_blank">GrepPage</a>. My mission is to make software development easy and frictionless.
       </p>
       <p>
-        Please see the <a href={repoReadmeLink}>repo readme</a> for
-        instructions on how to use this boilerplate
-        to deploy your own single page app using GitHub Pages.
+        Previously, I was data engineer at <a href="https://www.lookout.com">Lookout Mobile Security</a>. My experience is in big data, search and web development.
       </p>
-      <div><Link to="/example">Example page</Link></div>
+      <p>
+        I have a Masters from Carnegie Mellon University in Information Systems and Bachelors in Computer Science from UT Dallas. Check out my <a href="https://medium.com/@evidanary">medium blog</a>.
+      </p>
+      <div><Link to="/risk-profile">Investor Risk Profile</Link> - Answer a few questions to get a score of how risky your startup is for investors</div>
       <div><Link to="/example/two-deep?field1=foo&field2=bar#boom!">
         Example two deep with query and hash
       </Link></div>

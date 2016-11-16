@@ -6,3 +6,9 @@ node_modules
 
 # Files marked with gitigx
 *gitigx*
+
+# for vim
+*.swp
+*.swo
+
+__build__/*

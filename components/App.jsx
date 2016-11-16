@@ -29,19 +29,19 @@ function App({ children, routes }) {
     );
   }
 
-  const repoLink = 'https://github.com/rafrex/spa-github-pages';
+  const repoLink = 'https://github.com/evidanary';
 
   return (
     <div>
-      <h1>Single Page Apps for GitHub Pages</h1>
-      <a href={repoLink}>https://github.com/rafrex/spa-github-pages</a>
+      <h1>Yash Ranadive</h1>
+      <a href={repoLink}>https://github.com/evidanary</a>
       <nav>
         {generateMapMenu()}
       </nav>
       {children}
       <div style={{ color: '#A0A0A0', fontSize: '14px', marginTop: '50px' }}>
-        <a href="http://www.rafaelpedicini.com" className="extended-link">
-          Code and concept by <span className="link-style">Rafael Pedicini</span>
+        <a href="http://www.medium.com/@evidanary" className="extended-link">
+          &copy;2016. <span className="link-style">Yash Ranadive</span>
         </a>
       </div>
     </div>
