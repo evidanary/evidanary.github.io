@@ -10,5 +10,3 @@ node_modules
 # for vim
 *.swp
 *.swo
-
-__build__/*
