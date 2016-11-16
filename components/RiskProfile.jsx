@@ -363,7 +363,7 @@ export default class RiskProfile extends React.Component {
   }
 
   get followupActions() {
-    return (<div className="center-block"><button className="btn-lg btn-success" onClick={() => window.print()}>Print/Download</button></div>);
+    return (<div><button className="btn-lg btn-success center-block" onClick={() => window.print()}>Print/Download</button></div>);
   }
 
   //Calculates scores for risk categories object
