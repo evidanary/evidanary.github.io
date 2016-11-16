@@ -34,7 +34,7 @@ function App({ children, routes }) {
   return (
     <div className="container">
       <div className="row">
-        <h1>Yash Ranadive</h1>
+        <h1> <Link to="/">Yash Ranadive</Link></h1>
         <a href={repoLink}>https://github.com/evidanary</a>
         <nav>
           {generateMapMenu()}
