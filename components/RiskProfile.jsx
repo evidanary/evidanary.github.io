@@ -302,7 +302,7 @@ class Card extends React.Component {
 
   get chart() {
     return (
-      <Gauge value={this.props.riskCategory.score} min={0} max={5} width={400} height={320} label={this.props.riskCategory.name}/>
+      <Gauge className="img-fluid" value={this.props.riskCategory.score} min={0} max={5} width={400} height={320} label={this.props.riskCategory.name}/>
     );
   }
 
@@ -322,16 +322,16 @@ class Card extends React.Component {
       );
     });
 
-    return ( <ul>{list}</ul>);
+    return ( <ul className="list-inline">{list}</ul>);
   }
 
   render() {
     return (
-      <div style={{border: "2px solid gray"}}>
+      <div className="card">
         {this.heading}
         {this.chart}<br/>
         {this.explanation}
-        {this.questions}
+        {this.props.showQuestions ? this.questions : false}
         {this.summary}
       </div>
     );
@@ -342,24 +342,26 @@ export default class RiskProfile extends React.Component {
   constructor() {
     super();
     this.state = {
-      scoreReceived: 21,
       maxPossibleScore: 45,
-      riskCategories: RISK_CATEGORIES
+      riskCategories: RISK_CATEGORIES,
+      showQuestions: false
     }
     this.calculateScores = this.calculateScores.bind(this);
+    this.toggleShowQuestions = this.toggleShowQuestions.bind(this);
   }
 
   get summaryScore() {
     let totalScore = this.state.riskCategories.map((val) => val.score).reduce((a, b) => { return a + b; }, 0);
     return (
-      <div style={{border: "2px solid gray"}}>
-        <h2>Your Total Risk Score: {totalScore} / {this.state.maxPossibleScore}<span className="text-muted">(Larger Numbers are better)</span></h2>
+      <div className="card">
+        <h2>Your Total Risk Score: {totalScore} / {this.state.maxPossibleScore}</h2>
+        <span className="text-muted">(Larger Numbers are better)</span>
       </div>
     );
   }
 
   get followupActions() {
-    return (<button onClick={() => window.print()}>Print/Download</button>);
+    return (<button className="btn-lg btn-success" onClick={() => window.print()}>Print/Download</button>);
   }
 
   //Calculates scores for risk categories object
@@ -368,8 +370,17 @@ export default class RiskProfile extends React.Component {
     return Math.max(...weights, 0);
   }
 
+  //Toggles questions
+  toggleShowQuestions() {
+    this.setState({showQuestions: !this.state.showQuestions});
+  }
+
   get cards() {
-    return this.state.riskCategories.map((val, categoryIdx) => <Card key={categoryIdx} riskCategory={val} onChange={ (idx, checked) => {
+    return this.state.riskCategories.map((val, categoryIdx) =>
+                                         <Card key={categoryIdx}
+                                           riskCategory={val}
+                                           showQuestions={this.state.showQuestions}
+                                           onChange={ (idx, checked) => {
       let newRiskCategories = this.state.riskCategories;
       newRiskCategories[categoryIdx].questions[idx].checked = checked;
       newRiskCategories[categoryIdx].score = this.calculateScores(newRiskCategories[categoryIdx]);
@@ -387,6 +398,7 @@ export default class RiskProfile extends React.Component {
           This calculator is based off the <a href="https://codingvc.com/how-to-de-risk-a-startup">excellent article</a> by <a href="https://twitter.com/lpolovets">Leo Polovets</a>. A big thanks goes to Leo for providing this framework to calcuate risk.
         </p>
         {this.summaryScore}
+        <button className="btn-lg btn-primary" onClick={() => this.toggleShowQuestions()}>Edit</button>
         {this.cards}
         {this.summaryScore}
         {this.followupActions}
