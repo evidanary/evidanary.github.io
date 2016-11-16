@@ -343,7 +343,7 @@ export default class RiskProfile extends React.Component {
     this.state = {
       maxPossibleScore: 45,
       riskCategories: RISK_CATEGORIES,
-      showQuestions: false
+      showQuestions: true
     }
     this.calculateScores = this.calculateScores.bind(this);
     this.toggleShowQuestions = this.toggleShowQuestions.bind(this);
