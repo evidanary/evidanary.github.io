@@ -7,6 +7,7 @@ import App from './components/App';
 import Home from './components/Home';
 import PageNotFound from './components/PageNotFound';
 import RiskProfile from './components/RiskProfile';
+import Clock from './components/Clock';
 import ExampleComponent from './components/ExampleComponent';
 import ExampleTwoDeepComponent from './components/ExampleTwoDeepComponent';
 
@@ -19,6 +20,7 @@ const routes = (
       <Route path="two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
     </Route>
 
+    <Route path="clock" mapMenuTitle="Clock" component={Clock} />
     <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
   </Route>
 );

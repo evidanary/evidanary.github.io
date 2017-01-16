@@ -8,6 +8,21 @@
   margin-bottom: 20px;
 }
 
+.center-title{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+}
+
+.clock-card {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  max-width: 300px;
+  box-shadow: 2px 2px 13px 0 rgba(1,1,0,.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 .space-before {
   margin-top: 20px;
 }

@@ -394,15 +394,19 @@ export default class RiskProfile extends React.Component {
 
   render(){
     return (
-      <div className="center-block">
-        <h1>Calculating Your Investor Risk Profile</h1>
-        <p>
-          This calculator is based off the <a href="https://codingvc.com/how-to-de-risk-a-startup">excellent article</a> by <a href="https://twitter.com/lpolovets">Leo Polovets</a>. A big thanks goes to Leo for providing this framework to calcuate risk.
-        </p>
-        {this.summaryScore}
-        {this.cards}
-        {this.summaryScore}
-        {this.followupActions}
+      <div>
+        <div className="center-title">
+          <h1>Calculating Your Investor Risk Profile</h1>
+          <p>
+            This calculator is based off the <a href="https://codingvc.com/how-to-de-risk-a-startup">excellent article</a> by <a href="https://twitter.com/lpolovets">Leo Polovets</a>. A big thanks goes to Leo for providing this framework to calcuate risk.
+          </p>
+        </div>
+        <div>
+          {this.summaryScore}
+          {this.cards}
+          {this.summaryScore}
+          {this.followupActions}
+        </div>
       </div>
     );
   }
