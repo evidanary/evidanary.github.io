@@ -28811,7 +28811,7 @@
 	      _react2.default.createElement(
 	        'h2',
 	        null,
-	        'Writing & Talks'
+	        'Talks'
 	      ),
 	      _react2.default.createElement(
 	        'ul',

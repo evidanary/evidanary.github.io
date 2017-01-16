@@ -36,7 +36,7 @@ function Home() {
       </p>
 
       <p>
-        <h2>Writing & Talks</h2>
+        <h2>Talks</h2>
         <ul>
           <li>
             <a href="https://www.youtube.com/watch?v=9l5JN1fKVO8&index=7&list=PLSAiKuajRe2lQKV3OzYs1ncQSD9_QysqT">Video</a> and <a href="http://www.slideshare.net/Hadoop_Summit/storm-as-an-etl-engine-to-hadoop">slides</a> of my talk at Hadoop Summit Europe
