@@ -31,6 +31,25 @@ function Home() {
       </p>
 
       <p>
+        <h2>Products</h2>
+        List of products I created/helped create:
+        <ul>
+          <li>
+            <a href="https://www.greppage.com/">GrepPage</a> - a platform for software developers to search and share programming snippets
+          </li>
+          <li>
+            Analytics Infrastructure at <a href="https://www.lookout.com">Lookout Mobile Security</a>
+          </li>
+          <li>
+            <a href="https://apps.nlrb.gov/eservice/efileterm.aspx">E-filing</a> at <a href="https://www.nlrb.gov/">NLRB</a>
+          </li>
+          <li>
+            <a href="https://www.nlrb.gov/search/all">Legal Document Search</a> at <a href="https://www.nlrb.gov/">NLRB</a>
+          </li>
+        </ul>
+      </p>
+
+      <p>
         <h2>Interesting Links</h2>
         <div><Link to="/risk-profile">Investor Risk Profile</Link> - Answer a few questions to get a score of how risky your startup is for investors</div>
       </p>

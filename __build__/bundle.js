@@ -28792,6 +28792,70 @@
 	      _react2.default.createElement(
 	        'h2',
 	        null,
+	        'Products'
+	      ),
+	      'List of products I created/helped create:',
+	      _react2.default.createElement(
+	        'ul',
+	        null,
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.greppage.com/' },
+	            'GrepPage'
+	          ),
+	          ' - a platform for software developers to search and share programming snippets'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Analytics Infrastructure at ',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.lookout.com' },
+	            'Lookout Mobile Security'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://apps.nlrb.gov/eservice/efileterm.aspx' },
+	            'E-filing'
+	          ),
+	          ' at ',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.nlrb.gov/' },
+	            'NLRB'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.nlrb.gov/search/all' },
+	            'Legal Document Search'
+	          ),
+	          ' at ',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.nlrb.gov/' },
+	            'NLRB'
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      _react2.default.createElement(
+	        'h2',
+	        null,
 	        'Interesting Links'
 	      ),
 	      _react2.default.createElement(
