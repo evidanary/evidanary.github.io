@@ -1,0 +1,7 @@
+main:
+  - title: "About"
+    url: /
+  - title: "Products"
+    url: /products/
+  - title: "Blog"
+    url: https://www.medium.com/@evidanary
