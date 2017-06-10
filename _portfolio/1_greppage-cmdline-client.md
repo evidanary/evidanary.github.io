@@ -1,6 +1,6 @@
 ---
 title: "GrepPage"
-excerpt: "Conceived and launched backend, frontend, search engine"
+excerpt: "Conceived and launched backend, frontend, search engine (2015-17)"
 header:
 #   image: /assets/images/greppage-identity.jpg
   teaser: /assets/images/greppage-identity-th.jpg
