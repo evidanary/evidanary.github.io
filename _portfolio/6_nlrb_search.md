@@ -1,6 +1,6 @@
 ---
 title: "Search Engine - NLRB"
-excerpt: "Architected Solr search strategy (2010-11)
+excerpt: "Architected Solr search strategy (2010-11)"
 header:
 #   image: /assets/images/greppage-identity.jpg
   teaser: /assets/images/nlrb-search-identity-th.jpg

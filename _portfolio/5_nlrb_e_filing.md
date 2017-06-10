@@ -1,6 +1,6 @@
 ---
 title: "E-Filing - NLRB"
-excerpt: "Architected TurboTax like Q&A flow to E-File documents (2009-10)
+excerpt: "Architected TurboTax like Q&A flow to E-File documents (2009-10)"
 header:
 #   image: /assets/images/greppage-identity.jpg
   teaser: /assets/images/nlrb-e-filing-identity-th.jpg
